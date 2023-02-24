@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #Name, #Age, #Address{
+            width: 300px;
+        }
+        h2{
+            text-align: center;
+        }
+        table{
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+        }
+        #btnEdit, #btnDel{
+            background-color: blue;
+            color: white;
+
+        }
+        #buttonCreate{
+            background-color: green;
+            color: white;
+            border-radius: 7px;
+        }
+        #buttonSearch{
+            background-color: aqua;
+            color: red;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>--------STUDENT MANAGE----------</h2>
+    <label>Name</label><br>
+    <input type="text" id="Name" placeholder="Please fill to create new Student..."><br>
+    <label>Age</label><br>
+    <input type="text" id="Age" placeholder="Please fill to create new Student..."><br>
+    <label>Address</label><br>
+    <input type="text" id="Address" placeholder="Please fill to create new Student..."><br>
+    <button id="buttonCreate" onclick="createStudent()"> Create Student</button><br>
+    <input type="text" id="search" placeholder="Please enter the name student to find...">
+    <button id="buttonSearch" onclick="searchStudent()" >Search</button> <br>
+
+    <table border="1px">
+        <header>
+            <th>STT</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>ADDRESS</th>
+            <th>EDIT</th>
+            <th>DELETE</th>
+        </header>
+        <tbody id="tbody">
+           
+            <!-- <tr>
+                <td>1</td>
+                <td>nam</td>
+                <td>20</td>
+                <td>hanoi</td>
+                <td><button id="btnEdit" onclick="editStudent()">Edit</button></td>
+                <td><button id="btnDel" onclick="deleteStudent()">Delete</button></td>
+            </tr> -->
+        </tbody>
+    </table>
+
+    
+</body>
+<script src="student.js"></script>
+</html>
